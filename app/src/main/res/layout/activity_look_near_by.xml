@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<android.support.constraint.ConstraintLayout tools:context="com.example.user.firebase_test.look_near_by" android:background="#31241D" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintVertical_bias="0.035" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:textSize="18sp" android:textColor="#C1A266" android:text="LOOKING FOR:" android:fontFamily="@font/adventure" android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp" android:id="@+id/textView"/>
+
+    <ImageButton android:background="@android:color/transparent" android:layout_height="76dp" android:layout_width="68dp" app:layout_constraintVertical_bias="0.144" app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp" android:id="@+id/hotelsButton" app:srcCompat="@drawable/hotels" app:layout_constraintStart_toEndOf="@+id/restaurantsButton" app:layout_constraintHorizontal_bias="0.505" android:scaleType="centerInside"/>
+
+    <ImageButton android:background="@android:color/transparent" android:layout_height="76dp" android:layout_width="68dp" app:layout_constraintVertical_bias="0.146" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp" android:id="@+id/restaurantsButton" app:srcCompat="@drawable/foods" android:scaleType="centerInside"/>
+
+    <ImageButton android:background="@android:color/transparent" android:layout_height="76dp" android:layout_width="68dp" app:layout_constraintVertical_bias="0.016" app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp" android:id="@+id/ATMButton" app:srcCompat="@drawable/atm" app:layout_constraintHorizontal_bias="0.597" android:scaleType="centerInside" app:layout_constraintTop_toBottomOf="@+id/touristPlacesText" app:layout_constraintEnd_toStartOf="@+id/gasStationButton"/>
+
+    <ImageButton android:background="@android:color/transparent" android:layout_height="76dp" android:layout_width="68dp" app:layout_constraintVertical_bias="0.065" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp" android:id="@+id/gasStationButton" app:srcCompat="@drawable/gas_station" app:layout_constraintHorizontal_bias="0.498" android:scaleType="centerInside" app:layout_constraintTop_toBottomOf="@+id/foodsText"/>
+
+    <ImageButton android:background="@android:color/transparent" android:layout_height="76dp" android:layout_width="68dp" app:layout_constraintVertical_bias="0.142" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp" android:id="@+id/touristPlacesButton" app:srcCompat="@drawable/tourist_places" app:layout_constraintHorizontal_bias="0.59" android:scaleType="centerInside" app:layout_constraintEnd_toStartOf="@+id/restaurantsButton"/>
+
+    <ImageButton android:background="@android:color/transparent" android:layout_height="76dp" android:layout_width="68dp" app:layout_constraintVertical_bias="0.07" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp" android:id="@+id/pharmaciesButton" app:srcCompat="@drawable/pharamcies" app:layout_constraintStart_toEndOf="@+id/gasStationButton" app:layout_constraintHorizontal_bias="0.511" android:scaleType="centerInside" app:layout_constraintTop_toBottomOf="@+id/hotelsText"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintVertical_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:textColor="#C1A266" android:text="TOURIST \n PLACES" android:fontFamily="@font/adventure" android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp" android:id="@+id/touristPlacesText" app:layout_constraintHorizontal_bias="0.579" app:layout_constraintTop_toBottomOf="@+id/touristPlacesButton" app:layout_constraintEnd_toStartOf="@+id/foodsText" android:maxLines="2" android:lines="2"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintVertical_bias="0.023" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:textColor="#C1A266" android:text="GAS \n STATION" android:fontFamily="@font/adventure" android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp" android:id="@+id/gasStationText" app:layout_constraintHorizontal_bias="0.498" app:layout_constraintTop_toBottomOf="@+id/gasStationButton" android:maxLines="2" android:lines="2" android:textAlignment="center"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintVertical_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:textColor="#C1A266" android:text="FOODS" android:fontFamily="@font/adventure" android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp" android:id="@+id/foodsText" app:layout_constraintHorizontal_bias="0.498" app:layout_constraintTop_toBottomOf="@+id/restaurantsButton" android:textAlignment="center"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintVertical_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:textColor="#C1A266" android:text="ATM" android:fontFamily="@font/adventure" android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp" android:id="@+id/ATMTexts" app:layout_constraintHorizontal_bias="0.58" app:layout_constraintTop_toBottomOf="@+id/ATMButton" app:layout_constraintEnd_toStartOf="@+id/gasStationText" android:textAlignment="center"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintVertical_bias="0.0" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:textColor="#C1A266" android:text="PHARMACIES" android:fontFamily="@font/adventure" android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginBottom="264dp" android:id="@+id/pharamaciesText" app:layout_constraintStart_toEndOf="@+id/gasStationText" app:layout_constraintTop_toBottomOf="@+id/pharmaciesButton" android:textAlignment="center"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintVertical_bias="0.0" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:textColor="#C1A266" android:text="HOTELS" android:fontFamily="@font/adventure" android:layout_marginTop="8dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginBottom="8dp" android:id="@+id/hotelsText" app:layout_constraintStart_toEndOf="@+id/foodsText" app:layout_constraintHorizontal_bias="0.552" app:layout_constraintTop_toBottomOf="@+id/hotelsButton" android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/search_friend"
+        android:layout_width="73dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="140dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/searchfriend"
+        android:onClick="search_friend"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pharamaciesText"
+        app:layout_constraintVertical_bias="0.826" />
+    <TextView
+        android:id="@+id/findFriend"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/adventure"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="FIND \n FRIEND"
+        android:textAlignment="center"
+        android:textColor="#C1A266"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gasStationButton"
+        app:layout_constraintVertical_bias="0.587" />
+
+    <Button
+        android:id="@+id/clear_map_history"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#A7361C"
+        android:fontFamily="@font/adventure"
+        android:onClick="clear_map_history"
+        android:text="clear_map_history"
+        android:textColor="#C1A266"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gasStationText"
+        app:layout_constraintVertical_bias="0.937" />
+    <TextView
+        android:id="@+id/emergencySMS"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/adventure"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="EMERGENCY \n SMS"
+        android:textAlignment="center"
+        android:textColor="#C1A266"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extreme_emergency"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/extreme_emergency"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="144dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/emergencycontact"
+        android:onClick="extreme_emergency"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/search_friend"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ATMTexts"
+        app:layout_constraintVertical_bias="0.56" />
+
+
+    <TextView
+        android:id="@+id/LookText"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adventure"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="Search area"
+        android:textAlignment="center"
+        android:textColor="#C1A266"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LookButton"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <ImageButton
+        android:id="@+id/LookButton"
+        android:layout_width="68dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:onClick="look"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69"
+        app:srcCompat="@drawable/look_nearby" />
+
+
+</android.support.constraint.ConstraintLayout>

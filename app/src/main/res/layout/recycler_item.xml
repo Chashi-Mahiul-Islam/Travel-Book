@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/brownBackground">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:elevation="4dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="5dp"
+        card_view:cardCornerRadius="1dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+         >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:id="@+id/img"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/txtDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img"
+                android:fontFamily="@font/adventure"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12sp"
+
+                android:textStyle="normal"
+                android:typeface="sans" />
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/adventure"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12sp"
+                android:layout_below="@id/txtDetails"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtTitle"
+                android:fontFamily="@font/adventure"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+
+                android:paddingTop="5dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/txtVotes"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDescription"
+                android:fontFamily="@font/adventure"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+
+                android:paddingTop="5dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/txtContributors"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtVotes"
+                android:fontFamily="@font/adventure"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+
+                android:paddingTop="5dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
